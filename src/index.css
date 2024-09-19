@@ -1,0 +1,38 @@
+/* Lato font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Font awesome icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
+
+@font-face {
+  font-family: 'Simplifica';
+  src: url('./assets/simplifica.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --background: #121212; /* Very Dark Gray */
+  --surface: #1e1e1e; /* Dark Gray */
+  --primary: #bb86fc; /* Light Purple */
+  --secondary: #03dac6; /* Teal */
+  --accent: #ff4081; /* Pink */
+  --text-primary: #ffffff; /* White */
+  --text-secondary: #b0bec5; /* Light Gray */
+  --error: #cf6679; /* Red */
+  --divider: #373737; /* Medium Gray */
+
+  --ff-serif: 'Simplifica', serif;
+  --ff-sans-serif: 'Lato', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+}
