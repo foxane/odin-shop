@@ -11,12 +11,17 @@ a:focus,
 }
 
 .container {
+  border-bottom: 2px solid var(--divider);
+}
+
+.contentWrapper {
+  margin: auto;
+  height: var(--height-header);
+  padding: 0.5rem 1rem 0.5rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1rem 0.5rem 2rem;
-  height: 80px;
-  border-bottom: 2px solid var(--divider);
+  max-width: var(--header-max-width);
 }
 
 .btnContainer {
@@ -45,29 +50,35 @@ a:focus,
   border-radius: 10px;
 }
 
-.cartCount {
+.itemCount {
   font-family: var(--sans-serif);
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 900;
-  color: var(--primary);
+  color: var(--text-primary);
+  background-color: var(--accent);
+  border-radius: 50%;
   padding: 0.2rem;
 
   position: relative;
-  top: -10px;
+  top: -20px;
   right: 5px;
 }
 
-.topNav nav {
+.inlineNav nav {
+  padding-right: 20px; /* Add space to make nav centered */
   font-size: 1.2rem;
   display: flex;
   gap: 1.2rem;
+}
+
+.navToggle {
+  margin-right: 40px; /* Add space to make title centered */
 }
 
 .floatNav nav {
   display: flex;
   flex-flow: column;
   gap: 2rem;
-  height: 60%;
 }
 
 .floatNav {
@@ -76,12 +87,11 @@ a:focus,
   background-color: var(--background);
 
   position: absolute;
-  top: 80px;
+  height: var(--height-nav);
+  top: calc(var(--height-header) + 2px); /* Add 2px for header's border */
   left: -250px;
   width: 250px;
-  height: calc(100vh - 80px);
-  padding: 2rem;
-  padding-top: 80px;
+  padding: 5rem 2rem 2rem;
 
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -132,7 +142,7 @@ a:focus,
   .navToggle {
     display: block;
   }
-  .topNav {
+  .inlineNav {
     display: none;
   }
 }

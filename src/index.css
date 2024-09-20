@@ -24,6 +24,16 @@
 
   --ff-serif: 'Simplifica', serif;
   --ff-sans-serif: 'Lato', sans-serif;
+
+  /* To make holy grail layout on large screen */
+  --page-max-width: 1200px;
+  --header-max-width: calc(var(--page-max-width) + 200px);
+  --footer-max-width: calc(var(--page-max-width) + 200px);
+
+  --root-min-width: 420px; /* This is the smallest width supported */
+
+  --height-header: 80px;
+  --height-nav: calc(100vh - var(--height-header));
 }
 
 * {
@@ -35,4 +45,5 @@
 body {
   background-color: var(--background);
   color: var(--text-primary);
+  min-width: var(--root-min-width);
 }

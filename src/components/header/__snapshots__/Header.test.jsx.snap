@@ -1,0 +1,90 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Header component > rendered correctly 1`] = `
+<div>
+  <header
+    class="_container_69e643"
+  >
+    <div
+      class="_contentWrapper_69e643"
+    >
+      <button
+        aria-label="navigation button"
+        class="_navBtn_69e643 _navToggle_69e643"
+      >
+        <i
+          class="fa-solid fa-bars"
+        />
+      </button>
+      <a
+        class="_title_69e643"
+        href="/"
+      >
+        <h1>
+          Gogobebe
+        </h1>
+      </a>
+      <div
+        class="_inlineNav_69e643"
+      >
+        <nav>
+          <a
+            aria-current="page"
+            class="active"
+            href="/"
+          >
+            Home
+          </a>
+          <a
+            class=""
+            href="/categories"
+          >
+            Categories
+          </a>
+          <a
+            class=""
+            href="/products"
+          >
+            All Products
+          </a>
+          <a
+            class=""
+            href="/about"
+          >
+            About
+          </a>
+        </nav>
+      </div>
+      <div
+        class="_btnContainer_69e643"
+      >
+        <button
+          class="_navBtn_69e643"
+        >
+          <i
+            class="fa-solid fa-magnifying-glass"
+          />
+        </button>
+        <div
+          class="_cartContainer_69e643"
+        >
+          <a
+            class="_navBtn_69e643"
+            href="/cart"
+          >
+            <i
+              class="fa-solid fa-cart-shopping"
+            />
+            <span
+              aria-label="item in cart"
+              class="_itemCount_69e643"
+            >
+              10
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+`;
