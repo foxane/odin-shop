@@ -12,3 +12,7 @@
 
 to put it simply : container is parent, and contentWrapper is child
 you should <b>ALWAYS</b> use above naming to make it clear, PLEASE!!
+
+# NOTE
+
+- Fix link styles on Header.module.css, make it to not affect other links, also fix navBtn and link style

@@ -10,7 +10,7 @@ exports[`Header component > rendered correctly 1`] = `
     >
       <button
         aria-label="navigation button"
-        class="_navBtn_69e643 _navToggle_69e643"
+        class="_navBtn_69e643 _toggleMenu_69e643"
       >
         <i
           class="fa-solid fa-bars"

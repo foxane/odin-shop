@@ -21,6 +21,8 @@
   --text-secondary: #b0bec5; /* Light Gray */
   --error: #cf6679; /* Red */
   --divider: #373737; /* Medium Gray */
+  --copyright: rgb(30, 30, 30);
+  --overlay: rgba(56, 55, 55, 0.562);
 
   --ff-serif: 'Simplifica', serif;
   --ff-sans-serif: 'Lato', sans-serif;
@@ -28,12 +30,14 @@
   /* To make holy grail layout on large screen */
   --page-max-width: 1200px;
   --header-max-width: calc(var(--page-max-width) + 200px);
-  --footer-max-width: calc(var(--page-max-width) + 200px);
+  --footer-max-width: var(--header-max-width);
 
-  --root-min-width: 420px; /* This is the smallest width supported */
+  --root-min-width: 320px; /* This is the smallest width supported */
 
-  --height-header: 80px;
+  --height-header: 5rem;
   --height-nav: calc(100vh - var(--height-header));
+
+  --height-copyright: 20px;
 }
 
 * {
@@ -42,8 +46,19 @@
   box-sizing: border-box;
 }
 
+#root,
 body {
   background-color: var(--background);
   color: var(--text-primary);
-  min-width: var(--root-min-width);
+  /* min-width: var(--root-min-width); */ /* Seems unnecessary  ill keep it just in case*/
+
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+/* Pages */
+main {
+  flex-grow: 1;
 }
