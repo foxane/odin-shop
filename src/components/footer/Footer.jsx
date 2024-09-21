@@ -63,11 +63,11 @@ const Footer = () => {
           </a>
           <span> - </span>
           <a
-            href="http://theodinproject.org"
+            href="http://theodinproject.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            TheOdinProject.org
+            TheOdinProject.com
           </a>
         </p>
       </div>

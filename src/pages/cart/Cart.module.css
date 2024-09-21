@@ -1,0 +1,49 @@
+.container {
+  margin: 0 auto;
+  margin-top: var(--height-header);
+  max-width: var(--page-max-width);
+
+  h1,
+  .checkoutBtn {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+
+  .checkoutBtn {
+    margin-top: 1rem;
+    padding: 0.4rem 0.8rem;
+    background-color: var(--background);
+    border: 1px solid var(--primary);
+    font-size: 1rem;
+    font-family: var(--ff-sans-serif);
+    color: var(--primary);
+
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+
+    &:hover {
+      color: var(--background);
+      background-color: var(--primary);
+    }
+
+    i {
+      padding-right: 0.5rem;
+    }
+  }
+}
+
+.cardWrapper {
+  padding: 2rem;
+  max-width: var(--page-max-width);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 500px) {
+  .cardWrapper {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  }
+}

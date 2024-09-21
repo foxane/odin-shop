@@ -1,0 +1,36 @@
+.container {
+  margin-top: var(--height-header);
+  padding: 5rem;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  border-top: 2px solid var(--divider);
+
+  h1 {
+    font-family: var(--ff-hero);
+    font-size: 3rem;
+  }
+
+  p {
+    color: var(--text-secondary);
+  }
+
+  a:any-link {
+    color: var(--text-primary);
+
+    &:hover,
+    &:focus {
+      color: var(--primary);
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .container h1 {
+    font-size: 2rem;
+  }
+}

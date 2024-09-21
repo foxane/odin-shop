@@ -3,14 +3,14 @@
 exports[`Header component > rendered correctly 1`] = `
 <div>
   <header
-    class="_container_69e643"
+    class="_container_69e643 "
   >
     <div
       class="_contentWrapper_69e643"
     >
       <button
         aria-label="navigation button"
-        class="_navBtn_69e643 _toggleMenu_69e643"
+        class="_navBtn_69e643 _openMenuBtn_69e643"
       >
         <i
           class="fa-solid fa-bars"
@@ -20,9 +20,16 @@ exports[`Header component > rendered correctly 1`] = `
         class="_title_69e643"
         href="/"
       >
-        <h1>
+        <h1
+          class="_titleBig_69e643"
+        >
           Gogobebe
         </h1>
+        <img
+          alt="Gogobebe logo"
+          class="_titleSmall_69e643"
+          src="/logo.svg"
+        />
       </a>
       <div
         class="_inlineNav_69e643"

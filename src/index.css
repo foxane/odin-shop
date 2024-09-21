@@ -26,6 +26,7 @@
   --divider: #373737; /* Medium Gray */
   --copyright: rgb(30, 30, 30);
   --overlay: rgba(56, 55, 55, 0.562);
+  --shadow: rgba(242, 242, 242, 0.122);
 
   --ff-serif: 'Simplifica', serif;
   --ff-sans-serif: 'Lato', sans-serif;
@@ -42,6 +43,8 @@
   --height-nav: calc(100vh - var(--height-header));
 
   --height-copyright: 20px;
+
+  --page-header-height: 4rem;
 }
 
 * {
@@ -65,4 +68,10 @@ body {
 /* Pages */
 main {
   flex-grow: 1;
+  background-image: linear-gradient(
+    to bottom,
+    var(--background),
+    var(--surface)
+  );
+  background-attachment: fixed;
 }

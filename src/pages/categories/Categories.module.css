@@ -1,0 +1,23 @@
+.container {
+  margin-top: var(--height-header);
+}
+
+.contentWrapper {
+  padding-top: 5rem;
+  padding: 0 2rem;
+  display: flex;
+  flex-flow: column;
+
+  h1 {
+    text-align: center;
+    font-family: var(--ff-hero);
+  }
+}
+
+.catWrapper {
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem;
+}
