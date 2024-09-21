@@ -1,9 +1,12 @@
 .container {
-  border-bottom: 2px solid var(--divider);
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .contentWrapper {
   margin: auto;
+
   height: var(--height-header);
   padding-left: 2rem;
   padding-right: 1rem;
